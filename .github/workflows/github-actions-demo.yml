@@ -1,11 +1,12 @@
 name: Github Actions Demo
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
+    paths-ignore: [.github/**]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
   schedule:
-    - cron: "15 6 * * 06"
+    - cron: '15 6 * * 06'
   workflow_dispatch:
   
 jobs:
